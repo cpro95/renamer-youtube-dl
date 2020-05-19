@@ -4,7 +4,7 @@
 // #include "CLI/CLI.hpp"
 #include "lib/myStringLib.hpp"
 #include "spdlog/spdlog.h"
-#include "tabulate/table.hpp"
+#include "tabulate/tabulate.hpp"
 
 void make_table(tabulate::Table& table, std::vector<std::string>& vMovieFiles) {
   spdlog::info("Make Table...");
