@@ -68,9 +68,9 @@ namespace myStringLib
 	bool alreadyRenamed(std::string str)
 	{
 		std::string testData = myStringLib::getFileName(str);
-		if (testData.length() < 15)
+		if (testData.length() < 13)
 			return true;
-		if (testData.substr(testData.length() - 15 + 1, 1)
+		if (testData.substr(testData.length() - 13 + 1, 1)
 				.compare(std::string{"-"}) == 0)
 		{
 			return false;
@@ -86,10 +86,10 @@ namespace myStringLib
 	std::string substrHyphen(std::string str)
 	{
 		std::string testData = myStringLib::getFileName(str);
-		if (testData.length() < 15)
+		if (testData.length() < 13)
 			return testData;
 		else
-			return testData.substr(0, testData.length() - 14);
+			return testData.substr(0, testData.length() - 12);
 	}
 
 	// getExtension

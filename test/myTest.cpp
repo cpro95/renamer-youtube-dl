@@ -19,8 +19,8 @@ TEST_CASE("myStringLib") {
   }
 
   SECTION("substrHyphen") {
-    spdlog::info("givenData : test-1234567890123.m4a");
-    std::string givenData{"test-1234567890123.m4a"};
+    spdlog::info("givenData : test-12345678901.m4a");
+    std::string givenData{"test-12345678901.m4a"};
     spdlog::info("{}", myStringLib::substrHyphen(givenData));
     REQUIRE(myStringLib::substrHyphen(givenData).compare(std::string{"test"}) ==
             0);
@@ -28,7 +28,7 @@ TEST_CASE("myStringLib") {
 
   SECTION("alreadyRenamed") {
     REQUIRE(
-        !myStringLib::alreadyRenamed(std::string{"test-1234567890123.m4a"}));
+        !myStringLib::alreadyRenamed(std::string{"test-12345678901.m4a"}));
     REQUIRE(myStringLib::alreadyRenamed(std::string{"test.m4a"}));
   }
 }
