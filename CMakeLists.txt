@@ -1,17 +1,17 @@
-# Example CMake file for compiling & linking a project with the the SQLiteCpp
-# wrapper
+# Example CMake file for compiling & linking a project
 #
-# Copyright (c) 2012-2020 Sebastien Rombauts (sebastien.rombauts@gmail.com)
+# Copyright (c) 2012-2020 cpro95 (cpro95@gmail.com)
 #
 # Distributed under the MIT License (MIT) (See accompanying file LICENSE.txt or
 # copy at http://opensource.org/licenses/MIT)
+
 cmake_minimum_required(VERSION 3.1) # for "CMAKE_CXX_STANDARD" version
 project(renamer-youtube-dl VERSION 2.0)
 
 # set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_BUILD_TYPE Release)
 
-# SQLiteC++ 3.x now requires C++11 compiler
+# for C++11 compiler
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
